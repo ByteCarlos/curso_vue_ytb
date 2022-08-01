@@ -1,6 +1,6 @@
 <template>
     <img :src="avatar" :alt="descricao">
-    <reutilizacao />
+    <Reutilizacao />
 </template>
 <script>
     import Reutilizacao from './Reutilizacao.vue'
