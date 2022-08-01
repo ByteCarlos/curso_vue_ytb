@@ -28,9 +28,7 @@ import Picture from './Picture.vue'
     name: "Info",
     data() {
         return {
-            esta_trabalhando: false,
             mostrar_email: false,
-            email: "carlos@email.com",
             meu_link: "https://google.com",
             textoBotao: 'Mostrar e-mail',
             backend_technologies: ['Javascript', 'PHP', 'Python'],
@@ -41,7 +39,13 @@ import Picture from './Picture.vue'
             ]
         };
     },
-    components: { Picture },
+    components: { 
+        Picture 
+    },
+    props: {
+        email: String,
+        esta_trabalhando: Boolean
+    },
     methods: {
         showEmail() {
             this.mostrar_email = !this.mostrar_email
